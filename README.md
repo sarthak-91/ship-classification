@@ -2,15 +2,23 @@
 This project aims to distinguish between different types of ships using their noise radiated from the ship using ML models. Two models Convolutional Neural Network and Vision Transformer (ViT) is trained to learn the different ship types and classify them. 
 
 ### Dataset 
-The QiandaoEar22 (https://ieee-dataport.org/documents/qiandaoear22) dataset is used to train the ML models. The dataset contains 9 hours and 28 minutes of real-world ship-radiated noise data and 21 hours and 58 minutes of background noise data. The data is downloaded and organised in the following structure:
+The QiandaoEar22 (https://ieee-dataport.org/documents/qiandaoear22) dataset is used to train the ML models. The dataset contains 9 hours and 28 minutes of real-world ship-radiated noise data and 21 hours and 58 minutes of background noise data. The data is downloaded and organised in the following file structure:
 Sounds/
+
 ├── kai_yuan/
+
 │   └── target/.wav files
+
 ├── noise/
+
 │   └── target/.wav files
+
 ├── speedboat/
+
 │   └── target/.wav files
+
 └── uuv/
+
     └── target/.wav files
 
 There are three kinds of ships: kai-yuan, speedboat and uuv, and the rest of the samples are noise. 
