@@ -23,6 +23,7 @@ Sounds/
 
 There are three kinds of ships: kai-yuan, speedboat and uuv, and the rest of the samples are noise. 
 Thier distribution is: 
+
 ![dataset](figs/dataset_dist.png)
 
 ### Feature Engineering 
@@ -30,6 +31,7 @@ Now audio files need to be converted into arrays so that ML models can be traine
 It is calculated by performing Short Time Fourier Transform(STFT) on the audio wave. 
 For this we use a python library called librosa. The x axis represents time and y axis is the frequency in log scale and the amplitude of the frequency gives the color of the figure.
 Examples of one spectrogram figure is shown below:
+
 ![sprectrogram](figs/specs.png)
 
 The script spectogram.py converts the wav files into spectrograms. 
