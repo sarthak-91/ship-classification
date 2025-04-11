@@ -68,11 +68,13 @@ The second model used is the Vision Transformer layer. The idea behind this arch
 
 ### Evaluation 
 The performance of the models are studied using a confusion matrix. First the confusion matrix of the CNN model: 
+
 ![cnn confusion](figs/cnn_confusion.png)
 
 We see that most of the Kai Yuan ships are classified correctly. However most of the speedboats and UUV boats are getting classified as noise. 
 
 The confusion matrix of the transformer model is shown below:
+
 ![transformer confusion](figs/transformer_confusion.png)
 
 The transformer model is better than CNN model as we can see the more of the ship labels are classified correctly than the CNN model. However the Speedboats are still getting misclassified as noise. 
